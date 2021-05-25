@@ -1,3 +1,4 @@
+import MeetupList from '../components/layout/meetups/MeetupList'
 const DUMMY_DATA = [
   {
     id: 'm1',

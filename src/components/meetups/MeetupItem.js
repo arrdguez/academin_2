@@ -12,7 +12,7 @@ const MeetupItem(props) {
         <address>{props.addres}</address>
         <p>{props.description}</p>
       </div>
-      <div>
+      <div className={classes.action}>
         <button>To Favorites</button>
       </div>
     </li>
