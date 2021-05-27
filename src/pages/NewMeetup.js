@@ -1,9 +1,10 @@
 
 function NewMeetupPage(){
   return (
-    <div>
-      NewMeetups
-    </div>
+    <section>
+      <h1>New Meetup</h1>
+    </section>
+    
   )
 }
 
