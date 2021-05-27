@@ -1,5 +1,5 @@
 
-function NewMeetups(){
+function NewMeetupPage(){
   return (
     <div>
       NewMeetups
@@ -7,4 +7,4 @@ function NewMeetups(){
   )
 }
 
-export default NewMeetups
+export default NewMeetupPage
