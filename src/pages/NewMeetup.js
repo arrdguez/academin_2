@@ -1,8 +1,23 @@
+import { useHistory } from 'react-router-dom';
+
 import NewMeetupForm from '../components/meetups/NewMeetupForm';
 
 function NewMeetupPage(){
-  function addMeetupHandler(meetupData){
+  const history=useHistory();
 
+  function addMeetupHandler(meetupData){
+    fetch(
+      'https://academin2-default-rtdb.firebaseio.com/meetups.json',
+      {
+        method: 'POST',
+        body: JSON.stringify(meetupData),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      }
+    ).then(()=>{
+      history.remplace('/');
+    });
   }
   return (
     <section>
